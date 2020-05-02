@@ -1,7 +1,7 @@
-## docker-compose build
+## docker-compose build --build-arg INPUT=test.png gdal2tiles
 ## docker-compose run gdal2tiles
 
 gdal2tiles:
   build: ./
   volumes:
-    - ./imgs/_image_file:/opt/imgs/_image_file
+    - ./imgs/output:/opt/imgs/output
